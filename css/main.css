@@ -179,17 +179,19 @@ header .content-wrapper {
 /*** HOMEPAGE ***/
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
+ font-size: 1.125em;
+ font-weight: 700;
+ text-transform: uppercase;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-flow: row wrap;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
 
 }
@@ -200,9 +202,18 @@ header nav ul{
   padding: 20px;
 }
 
-.header-divider{
-  width: 100%;
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
 
+.header-divider{
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 aside{
@@ -259,8 +270,8 @@ input[type=button] {
 
 .features-items{
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-items-decriptions{
@@ -273,7 +284,6 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   width: 100%;
   background-color: #2a423a;
@@ -318,7 +328,10 @@ input[type=button] {
 
 .contact-section{
   background-color: #2a423a;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /*** FAQ ***/
@@ -346,10 +359,37 @@ footer{
   margin: 50px 0;
   padding: 0 40px;
   font-style: normal;
+  text-align: center;
+  flex-direction: column;
 }
 
 footer p{
   margin:0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /*** absolute ***/
@@ -485,7 +525,7 @@ footer p{
   }
 
   header nav ul {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .header-divider {
